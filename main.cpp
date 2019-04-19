@@ -1,11 +1,13 @@
 /**
-*	@author
-*	@date
+*	@author Prof. Gibbons
+* @Edited Eric Seitz
+*	@date	4/19/2019
 *	@file main.cpp
 *	@brief driver for LinkedList demo
 */
 #include <iostream>
 #include "LinkedListOfInts.h"
+#include "TestClass.h"
 
 int main(int argc, char** argv)
 {
@@ -16,6 +18,10 @@ int main(int argc, char** argv)
 	//Example:
 	//TestSuite myTester;
 	//myTester.runTests();
+
+	//Eric: Calling to all tests method in TestClass
+	TestClass myTester;
+	myTester.runAllTests();
 
 	std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
 
