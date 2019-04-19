@@ -1,6 +1,6 @@
 /**
-*	@author 
-*	@date 
+*	@author
+*	@date
 *	@file main.cpp
 *	@brief driver for LinkedList demo
 */
@@ -18,8 +18,18 @@ int main(int argc, char** argv)
 	//myTester.runTests();
 
 	std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
-	
+
 	return (0);
 
 }
 
+/**
+
+Eric Notes:
+Lab slides (useful!)
+https://people.eecs.ku.edu/~m576f167/
+
+Lab 6
+https://wiki.ittc.ku.edu/ittc_wiki/index.php/EECS448:Lab6
+
+*/
