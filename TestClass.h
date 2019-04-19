@@ -12,7 +12,7 @@
 #define TESTCLASS_H
 
 #include <iostream>
-//#include "LinkedListOfInts.h"
+#include "LinkedListOfInts.h"
 
 class TestClass
 {
@@ -20,13 +20,15 @@ public:
   /**
  * @pre
  * @post
- * @param 
+ * @param
  **/
 	TestClass();
 	void runAllTests();
+  void isEmptyTests();
 
-	void test1();
-	void test2();
+
+	void isEmptyTest1();
+	void isEmptyTest2();
 };
 
 #endif
