@@ -22,6 +22,7 @@ TestClass::TestClass()
 void TestClass::runAllTests()
 {
   isEmptyTests();
+  sizeTests();
 }
 
 void TestClass::isEmptyTests()
@@ -30,11 +31,53 @@ void TestClass::isEmptyTests()
   isEmptyTest2();    //test if isEmpty returns false on non-empty list
 }
 
-//Test 1
+void TestClass::sizeTests()
+{
+  sizeTest1();    //test if isEmpty returns true on empty list
+  sizeTest2();    //test if isEmpty returns false on non-empty list
+}
+
+//size Test 1
+void TestClass::sizeTest1()
+{
+  LinkedListOfInts testableList;
+  std::cout << "size Test 1: returns 0 on empty list\n";
+  std::cout << "size: " << testableList.size() << "\n";
+  if(testableList.size() != 0)
+  {
+    std::cout << "**FAILED**";
+  }
+  else
+  {
+    std::cout << "~~PASSED~~";
+  }
+  std::cout << "\n\n";
+}
+
+//size Test 2
+void TestClass::sizeTest2()
+{
+  LinkedListOfInts testableList;
+  std::cout << "size Test 2: returns not 0 on non-empty list\n";
+  testableList.addBack(5);
+  testableList.addFront(5);
+  std::cout << "size: " << testableList.size() << "\n";
+  if(testableList.size() == 0)
+  {
+    std::cout << "**FAILED**";
+  }
+  else
+  {
+    std::cout << "~~PASSED~~";
+  }
+  std::cout << "\n\n";
+}
+
+//isEmpty Test 1
 void TestClass::isEmptyTest1()
 {
   LinkedListOfInts testableList;
-  std::cout << "Test 1: isEmpty true on empty list\n";
+  std::cout << "isEmpty Test 1: isEmpty true on empty list\n";
   std::cout << "isEmpty: " << testableList.isEmpty() << "\n";
   std::cout << "size: " << testableList.size() << "\n";
   if(testableList.isEmpty() == false)
@@ -48,11 +91,11 @@ void TestClass::isEmptyTest1()
   std::cout << "\n\n";
 }
 
-//Test 2
+//isEmpty Test 2
 void TestClass::isEmptyTest2()
 {
   LinkedListOfInts testableList;
-  std::cout << "Test 2: isEmpty false on non-empty list\n";
+  std::cout << "isEmpty Test 2: isEmpty false on non-empty list\n";
   testableList.addBack(5);
   testableList.addFront(5);
   std::cout << "isEmpty: " << testableList.isEmpty() << "\n";

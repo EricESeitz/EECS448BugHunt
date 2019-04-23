@@ -25,7 +25,10 @@ public:
 	TestClass();
 	void runAllTests();
   void isEmptyTests();
+  void sizeTests();
 
+  void sizeTest1();
+  void sizeTest2();
 
 	void isEmptyTest1();
 	void isEmptyTest2();
