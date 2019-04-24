@@ -407,8 +407,7 @@ void TestClass::isEmptyTest1()
 {
   LinkedListOfInts testableList;
   std::cout << "isEmpty Test 1: isEmpty true on empty list\n";
-  std::cout << "isEmpty: " << testableList.isEmpty() << "\n";
-  std::cout << "size: " << testableList.size() << "\n";
+  std::cout << "size of list: " << testableList.size() << "\n";
   if(testableList.isEmpty() == false)
   {
     std::cout << "**FAILED**";
@@ -426,9 +425,8 @@ void TestClass::isEmptyTest2()
   LinkedListOfInts testableList;
   std::cout << "isEmpty Test 2: isEmpty false on non-empty list\n";
   testableList.addBack(5);
-  testableList.addFront(5);
-  std::cout << "isEmpty: " << testableList.isEmpty() << "\n";
-  std::cout << "size: " << testableList.size() << "\n";
+  testableList.addFront(4);
+  std::cout << "size of list: " << testableList.size() << "\n";
   if(testableList.isEmpty() == true)
   {
     std::cout << "**FAILED**";
