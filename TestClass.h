@@ -28,6 +28,18 @@ public:
   void sizeTests();
   void removeBackTests();
   void searchTests();
+	void removeFrontTests();
+	void addFrontTests();
+	void addBackTests();
+
+	void addFrontTest1();
+
+	void addBackTest1();
+
+	void removeFrontTest1();
+	void removeFrontTest2();
+	void removeFrontTest3();
+	void removeFrontTest4();
 
   void searchTest1();
 	void searchTest2();
