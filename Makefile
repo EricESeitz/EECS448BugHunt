@@ -6,7 +6,6 @@
 prog: main.o TestClass.o
 	g++ -g -Wall -std=c++11 main.o TestClass.o LinkedListOfInts.o -o prog
 
-
 main.o: main.cpp TestClass.h
 	g++ -g -Wall -std=c++11 -c main.cpp
 

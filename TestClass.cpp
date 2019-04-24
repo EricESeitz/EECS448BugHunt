@@ -22,10 +22,10 @@ TestClass::TestClass()
 //Default program, runs all tests
 void TestClass::runAllTests()
 {
-  isEmptyTests();
-  sizeTests();
-  removeBackTests();
   searchTests();
+  removeBackTests();
+  sizeTests();
+  isEmptyTests();
 }
 
 void TestClass::isEmptyTests()
@@ -147,7 +147,7 @@ void TestClass::removeBackTest2()
 void TestClass::removeBackTest3()
 {
   LinkedListOfInts testableList;
-  std::cout << "removeBack Test 3: removes only 1 back element (add five, expect 4)\n";
+  std::cout << "removeBack Test 3: removes only 1 back element (size five, expect size 4)\n";
   testableList.addBack(5);
   testableList.addBack(4);
   testableList.addBack(3);
@@ -157,12 +157,12 @@ void TestClass::removeBackTest3()
   testableList.removeBack();
   if(testableList.size() == 4)
   {
-    std::cout << "Size: " << testableList.size();
+    std::cout << "Size: " << testableList.size() << "\n";
     std::cout << "~~PASSED~~";
   }
   else
-  {    
-    std::cout << "Size: " << testableList.size();
+  {
+    std::cout << "Size: " << testableList.size() << "\n";
     std::cout << "**FAILED**";
   }
   std::cout << "\n\n";
@@ -172,19 +172,19 @@ void TestClass::removeBackTest3()
 void TestClass::removeBackTest4()
 {
   LinkedListOfInts testableList;
-  std::cout << "removeBack Test 4: removes only back element\n(Back element: 3. Expected search result of 3 post-remove: false)\n";
+  std::cout << "removeBack Test 4: removes only back element\n(Front element 5, Back element: 3. Expected search result of search 3 post-remove: false)\n";
   testableList.addFront(5);
   testableList.addBack(3);
-
   testableList.removeBack();
-
+  std::cout << "Search 5: " << testableList.search(5) << "\n";
+  std::cout << "Search 3: " << testableList.search(3) << "\n";
   if(testableList.search(3) == true)
   {
     std::cout << "**FAILED**";
 
   }
   else
-  {    
+  {
     std::cout << "~~PASSED~~";
   }
   std::cout << "\n\n";
