@@ -49,6 +49,7 @@ public:
 	void removeBackTest2();
 	void removeBackTest3();
   void removeBackTest4();
+	void removeBackTest5();
 
 
   void sizeTest1();

@@ -4,9 +4,10 @@ Contains your best guesses at to what the the purposely inserted bugs are
 isEmpty bugs:
 1. isEmpty returns true even when it has a size > 0 (isemptyTest2)
 
-size bugs:
-***. returns true if added to then removed (issue with removeFront?)
-
 removeBack bugs:
 1. Does NOT return true when back element removed (is back element being removed?)
+2. Elements appear to not be removed (test 4, search returns true)
+
+removeFront bugs:
+1. Does NOT return true when front element removed (is front element being removed?)
 2. Elements appear to not be removed (test 4, search returns true)
